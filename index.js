@@ -369,7 +369,7 @@ var ModalBox = React.createClass({
         <Animated.View
          onLayout={this.onViewLayout}
          style={[styles.wrapper, size, this.props.style, {transform: [{translateY: this.state.position}, {translateX: offsetX}]} ]}
-         {...this.state.pan.panHandlers}>
+         >
           {this.props.children}
         </Animated.View>
       </View>
